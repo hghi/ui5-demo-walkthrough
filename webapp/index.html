@@ -14,11 +14,12 @@
     </script>
     <script>
         sap.ui.getCore().attachInit(function() {
-            alert("UI5 is ready");
+            new sap.m.Text({
+                text: "Hello world in Text Box"
+            }).placeAt("content");
         });
     </script>
 </head>
-<body>
-<p>Hello world</p>
+<body id="content" class="sapUiBody">
 </body>
 </html>
