@@ -3,3 +3,6 @@
 
 # link to openui5 resources folder
 resources
+
+# MacOS
+.DS_Store
