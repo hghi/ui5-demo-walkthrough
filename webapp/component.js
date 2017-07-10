@@ -1,8 +1,8 @@
 sap.ui.define([
     'sap/ui/core/UIComponent',
     'sap/ui/model/json/JSONModel',
-    'sap/ui/model/resource/ResourceModel'
-], function(UIComponent, JSONModel, ResourceModel) {
+    'sap/ui/demo/wt/controller/hello_dialog'
+], function(UIComponent, JSONModel, hello_dialog) {
     'use strict';
 
     return UIComponent.extend('sap.ui.demo.wt.Component', {
@@ -21,6 +21,12 @@ sap.ui.define([
             };
             var oModel = new JSONModel(oData);
             this.setModel(oModel);
+
+            this._hello_dialog = new hello_dialog(this.getRootControl());
+        },
+
+        openHelloDialog: function() {
+            this._hello_dialog.open();
         }
     });
 });
