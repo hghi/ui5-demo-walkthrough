@@ -15,7 +15,8 @@
         "uri": "/proxy/V2/Northwind/Northwind.svc/",
         "type": "OData",
         "settings": {
-          "oDataVersion": "2.0"
+          "oDataVersion": "2.0",
+          "localUri": "/localService/metadata.xml"
         }
       }
     }
