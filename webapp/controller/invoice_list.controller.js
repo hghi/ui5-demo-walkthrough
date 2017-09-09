@@ -24,7 +24,7 @@ sap.ui.define([
 
         onInit: function() {
             var oModel = new JSONModel({
-                currency: "AUD"
+                currency: 'AUD'
             });
             this.getView().setModel(oModel, 'view');
         },

@@ -75,7 +75,7 @@
           "target": "overview"
         },
         {
-          "patter": "detail",
+          "pattern": "detail",
           "name": "detail",
           "target": "detail"
         }
