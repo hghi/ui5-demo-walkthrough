@@ -27,6 +27,11 @@ sap.ui.define([
                 currency: "AUD"
             });
             this.getView().setModel(oModel, 'view');
+        },
+
+        onPress: function (oEvent) {
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo('detail');
         }
     });
 });
