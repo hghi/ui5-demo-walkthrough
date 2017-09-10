@@ -4,6 +4,10 @@ sap.ui.define([
    'use strict';
    return Controller.extend('sap.ui.demo.wt.controller.app', {
 
+       onInit: function () {
+           this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
+       },
+
        onOpenDialog: function() {
            this.getOwnerComponent().openHelloDialog();
        }

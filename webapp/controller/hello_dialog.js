@@ -19,6 +19,8 @@ sap.ui.define([
                 }
                 oDialog = sap.ui.xmlfragment(oView.getId(), 'sap.ui.demo.wt.view.hello_dialog', oFragmentController);
                 oView.addDependent(oDialog);
+                // forward compact/cozy style into dialog
+                jQuery.sap.syncStyleClass(oView.getController().getOwnerComponent().getContentDensityClass(), oView, oDialog);
             }
             oDialog.open();
         }
